@@ -319,25 +319,6 @@ img {
   z-index: var(--z-back);
 }
 
-.skills__html {
-  width: 95%;
-}
-
-.skills__css {
-  width: 85%;
-}
-
-.skills__js {
-  width: 65%;
-}
-
-.skills__ux {
-  width: 85%;
-}
-
-.skills__img {
-  border-radius: .5rem;
-}
 
 /* ===== WORK =====*/
 .work__container {
@@ -359,24 +340,23 @@ img {
 }
 
 /* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
+
+.contact__title {
+  color: #000000;
+  text-align: center;
   font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
+  padding: 2rem 0;
 }
 
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+.contact__social {
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
+.contact__icon {
+  font-size: 1.5rem;
+  color: #000000;
+  margin: 0 var(--mb-2);
 }
 
 /* ===== FOOTER =====*/

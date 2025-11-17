@@ -1,4 +1,6 @@
 # Wsi Producoes
 # site 
 
-![preview img](/.png)
+previa do site :
+
+![preview img](/preview.png)
