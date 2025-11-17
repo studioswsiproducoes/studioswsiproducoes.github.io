@@ -339,6 +339,28 @@ img {
   transform: scale(1.1);
 }
 
+.work__img {
+  position: relative;
+  width: 100%;
+  height: 280px; /* altura padrão para desktop */
+  overflow: hidden;
+  border-radius: .5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.work__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 1s;
+}
+
+@media screen and (max-width: 480px) {
+  .work__img {
+    height: 200px; /* menor em celular */
+  }
+}
+
 /* ===== CONTACT =====*/
 
 .contact__title {
