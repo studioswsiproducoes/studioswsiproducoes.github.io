@@ -283,6 +283,22 @@ img {
     margin: 0 auto;
 }
 
+/* ===== CORREÇÃO DO BUG DA IMAGEM NO MOBILE =====*/
+@media screen and (max-width: 480px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .about__img img {
+        max-width: 220px; /* reduz ligeiramente no mobile */
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
