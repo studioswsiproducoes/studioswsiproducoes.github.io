@@ -239,17 +239,18 @@ img {
 
 .home__img {
   position: absolute;
-  right: 0;
+  right: 50px;
   bottom: 0;
-  width: 260px;
+  width: 180px;
 }
 
 .home__blob {
   fill: var(--first-color);
+  max-width: 400px;
 }
 
 .home__blob-img {
-  width: 360px;
+  width: 400px;
 }
 
 /*BOTÕES*/
@@ -283,14 +284,14 @@ img {
 
 .about__img img {
     width: 100%;
-    max-width: 280px; /* você pode ajustar */
+    max-width: 180px; /* você pode ajustar */
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 /* ===== CORREÇÃO DO BUG DA IMAGEM NO MOBILE =====*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 300px) {
     .about__container {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -299,9 +300,9 @@ img {
     }
 
     .about__img img {
-        max-width: 220px; /* reduz levemente no mobile */
-        width: 100%;
-        height: auto;
+        max-width: 300%; /* reduz levemente no mobile */
+        width: 90%;
+        height: 50%;
     }
 }
 
