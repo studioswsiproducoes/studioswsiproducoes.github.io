@@ -1,27 +1,32 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/*===== VARIABLES CSS =====*/
+
+/*===== VARIÁVEIS CSS =====*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
+
+  /*===== Cores =====*/
+  /*Roxo 260 - Vermelho 355 - Azul 224 - Rosa 340*/
+  /* Modo de cor HSL */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /*===== Fuente y tipografia =====*/
+
+  /*===== Fonte e tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
-  /*===== Margenes =====*/
+
+  /*===== Margens =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-  /*===== z index =====*/
+
+  /*===== z-index =====*/
   --z-back: -10;
   --z-fixed: 100;
 }
@@ -64,6 +69,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 h3 {
   position: relative;
   font-size: var(--h2-font-size);
@@ -79,7 +85,7 @@ img {
   display: block;
 }
 
-/*===== CLASS CSS ===== */
+/*===== CLASSES CSS ===== */
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -124,7 +130,7 @@ img {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
-/*===== NAV =====*/
+/*===== NAVEGAÇÃO =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -179,7 +185,7 @@ img {
   cursor: pointer;
 }
 
-/*Active menu*/
+/*Menu ativo*/
 .active::after {
   position: absolute;
   content: '';
@@ -190,7 +196,7 @@ img {
   background-color: var(--first-color);
 }
 
-/*=== Show menu ===*/
+/*=== Mostrar menu ===*/
 .show {
   right: 0;
 }
@@ -246,7 +252,7 @@ img {
   width: 360px;
 }
 
-/*BUTTONS*/
+/*BOTÕES*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -261,7 +267,7 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== ABOUT =====*/
+/* ===== SOBRE =====*/
 .about__container {
   row-gap: 2rem;
   text-align: center;
@@ -293,13 +299,13 @@ img {
     }
 
     .about__img img {
-        max-width: 220px; /* reduz ligeiramente no mobile */
+        max-width: 220px; /* reduz levemente no mobile */
         width: 100%;
         height: auto;
     }
 }
 
-/* ===== SKILLS =====*/
+/* ===== HABILIDADES =====*/
 .skills__container {
   row-gap: 2rem;
   text-align: center;
@@ -347,7 +353,7 @@ img {
 }
 
 
-/* ===== WORK =====*/
+/* ===== TRABALHOS =====*/
 .work__container {
   row-gap: 2rem;
 }
@@ -369,7 +375,7 @@ img {
 .work__img {
   position: relative;
   width: 100%;
-  height: 280px; /* altura padrão para desktop */
+  height: 280px; /* altura padrão no desktop */
   overflow: hidden;
   border-radius: .5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -384,11 +390,11 @@ img {
 
 @media screen and (max-width: 480px) {
   .work__img {
-    height: 200px; /* menor em celular */
+    height: 200px; /* altura menor no mobile */
   }
 }
 
-/* ===== CONTACT =====*/
+/* ===== CONTATO =====*/
 
 .contact__title {
   color: #000000;
@@ -408,7 +414,7 @@ img {
   margin: 0 var(--mb-2);
 }
 
-/* ===== FOOTER =====*/
+/* ===== RODAPÉ =====*/
 .footer {
   background-color: var(--second-color);
   color: #fff;
@@ -436,7 +442,7 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/* ===== MEDIA QUERIES=====*/
+/* ===== MEDIA QUERIES =====*/
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
@@ -557,14 +563,15 @@ img {
     width: 450px;
   }
 }
+
 /* Miniatura */
 .thumb {
-    width: 200px;     /* tamanho da versão pequena, ajuste se quiser */
+    width: 200px;     /* tamanho da imagem pequena */
     cursor: pointer;
     border-radius: 8px;
 }
 
-/* Modal invisível por padrão */
+/* Modal oculto por padrão */
 .modal {
     position: fixed;
     top: 0;
@@ -578,21 +585,22 @@ img {
     padding: 20px;
 }
 
-/* Quando o target é ativado (clicado) */
+/* Quando o modal é ativado pelo target */
 .modal:target {
     display: flex;
 }
 
-/* Imagem grande (tamanho real limitado pela tela) */
+/* Imagem grande dentro do modal */
 .modal img {
     max-width: 100%;
     max-height: 100%;
 }
 
-/* Clicar fora fecha */
+/* Clicar fora da imagem fecha o modal */
 .modal .close {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0; left: 0;
+    top: 0; 
+    left: 0;
 }
